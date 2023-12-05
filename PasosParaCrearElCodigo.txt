@@ -1,0 +1,10 @@
+Para comenzar mi proyecto sobre el juego de decisiones primero busque y pense un buen tema sobre el cual
+poder crear la historia de este mismo
+
+Por ahora inicializare las variables
+
+int main() {
+    int vidaDeLucas = 3;        //Se inicializa la variable acumulable 
+    int decision;
+
+para poder trabajar con el proceso del switch 
