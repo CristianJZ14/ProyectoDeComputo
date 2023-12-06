@@ -1,0 +1,98 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int vidaDeLucas = 3;        //Se inicializa la variable acumulable 
+    int decision;
+
+    cout << "Bienvenido a esta pequeña gran aventura donde te pondrás en la piel de un joven llamado *Lucas*." << endl;
+    cout << "En esta historia tomarás varias decisiones que cambiarán la vida de nuestro protagonista." << endl;
+    cout << "Dependiendo de tus respuestas a las problemáticas que enfrenta Lucas, tendrás un buen final o un final malo." << endl;
+    cout << "Te deseamos mucha suerte." << endl;
+
+    cout << "Bien, antes de comenzar debo explicarte 2 cosas muy importantes. Cuentas con un elemento acumulable." << endl;
+    cout << "La vidaDeLucas representa la salud de nuestro protagonista." << endl;
+    cout << "Al principio, tendrás 3/3 ❤ corazones, pero si baja a 0 perderás inmediatamente." << endl;
+    cout << "Los corazones se pueden ganar o perder dependiendo de la repercusión que tengan tus acciones en la vida de Lucas." << endl;
+
+    cout << "Te daremos un poco más de contexto sobre nuestro protagonista." << endl;
+    cout << "Tienes que lidiar con varias circunstancias que atentan con la vida de nuestro personaje para evitar que muera." << endl;
+    cout << "En esta historia habrá varios finales para nuestro héroe. ¡Encuéntralos todos!" << endl;
+     cout << "--------------------------" << endl;
+    cout << "Despiertas, es un día tranquilo y aburrido como todos los días en tu vida, escuchas que alguien ha entrado en tu casa." << endl;
+
+    while (vidaDeLucas > 0 && vidaDeLucas <= 3) {
+        cout << "\nEstado actual:" << endl;
+        cout << "Vida: " << vidaDeLucas << endl;
+
+        cout << "¿Qué decides hacer? (1. Te escondes debajo de la cama, 2. Te escondes en el baño, 3. Ver TikToks, 4. Bajar a ver qué está pasando, 5. Finalizar juego): ";
+        cin >> decision;
+
+        switch (decision) {
+            case 1: {
+                cout << "Te escondes debajo de la cama." << endl;
+                int decision2;
+                cout << "Esperas unos segundos y escuchas mucho ruido y gente golpeando cosas, un tipo con una máscara de hockey y un cuchillo en la mano ¿qué haces? (1. Sales y lo atacas , 2. Continúas escondido, 3. Tratas de tener un diálogo con él para ver qué quiere): ";
+                cin >> decision2;
+                switch (decision2) {
+                    case 1:
+                        cout << "No logras mucho y te apuñala." << endl;
+                        cout << "al pasar esto pierdes tus 3 corazones" << endl;
+                        vidaDeLucas = 0;
+                        cout << "!Moriste, Gracias por jugar!" << endl;
+                        break;
+                    case 2:
+                        cout << "El sujeto se lleva varios objetos de valor y se va, al parecer solo quería dinero." << endl;
+                        vidaDeLucas = 0;
+                        cout << "Logras salvar algunos objetos." << endl;
+                        cout << "al pasar esto mantienes tus 3 corazones" << endl;
+                        cout << "!Estas a salvo, Gracias por jugar!" << endl;
+                        break;
+                    case 3:
+                        cout << "El sujeto te secuestra para después mutilarte." << endl;
+                        cout << "al pasar esto pierdes tus 3 corazones" << endl;
+                        vidaDeLucas = 0;
+                        cout << "!Moriste, Gracias por jugar!" << endl;
+                        break;
+                    default:
+                        cout << "Opción no válida. Inténtalo de nuevo." << endl;
+                        continue;  // Vuelve al inicio del bucle
+                }
+                break;
+            }
+            case 2: {
+                cout << "Te escondes en el baño." << endl;
+                int decision3;
+                cout << "Ves a través de la puerta a un sujeto con un cuchillo y una máscara ¿qué haces? (1. Sales y lo atacas , 2. Continúas escondido, 3. Tratas de tener un diálogo con él para ver qué quiere): ";
+                cin >> decision3;
+                switch (decision3) {
+                    case 1:
+                        cout << "No logras mucho y te apuñala." << endl;
+                        cout << "al pasar esto pierdes tus 3 corazones" << endl;
+                        vidaDeLucas = 0;
+                        cout << "!Moriste, Gracias por jugar!" << endl;
+                        break;
+                    case 2: {
+                        cout << "El sujeto se lleva varios objetos de valor y se va, al parecer solo querían dinero." << endl;
+                        cout << "Haces una demanda y milagrosamente encuentran a los responsables. Te devuelven la mayoría de objetos y todo sale bien" << endl;
+                        vidaDeLucas = 0;
+                        cout << "Logras salvar tus objetos." << endl;
+                        cout << "al pasar esto mantienes tus 3 corazones" << endl;
+                        cout << "!Estas a salvo, Gracias por jugar!" << endl;
+                        break;
+                    }
+                    case 3: {
+                        cout << "El sujeto te dice que abras la puerta para poder hablar." << endl;
+                        int decision58;
+                        cout << "El sujeto te dice que abras la puerta para poder hablar ¿qué haces? (1. Sales , 2. Continúas escondido, 3. Tratas de escapar por la ventana): ";
+                        cin >> decision58;
+                        switch (decision58) {
+                            case 1:
+                                cout << "No lo piensa y te apuñala." << endl;
+                                cout << "al pasar esto pierdes tus 3 corazones" << endl;
+                                vidaDeLucas -= 3;
+                                cout << "!Moriste, Gracias por jugar!" << endl;
+                                break;
+
+En esta septima revision agregue una tercera opcion para el switch original sin completar por completo ya que las siguientes elecciones tendran aun mas elecciones que las anteriores escritas en el codigo :O
