@@ -1,0 +1,44 @@
+Para comenzar mi proyecto sobre el juego de decisiones primero busque y pense un buen tema sobre el cual
+poder crear la historia de este mismo
+
+Por ahora inicializare las variables
+
+int main() {
+    int vidaDeLucas = 3;        //Se inicializa la variable acumulable 
+    int decision;
+
+para poder trabajar con el proceso del switch 
+
+
+Para continuar creando el proyecto decidi agregar un poco de contexto sobre el personaje que sera el protagonista
+del juego c:
+
+cout << "Bienvenido a esta pequeña gran aventura donde te pondrás en la piel de un joven llamado *Lucas*." << endl;
+    cout << "En esta historia tomarás varias decisiones que cambiarán la vida de nuestro protagonista." << endl;
+    cout << "Dependiendo de tus respuestas a las problemáticas que enfrenta Lucas, tendrás un buen final o un final malo." << endl;
+    cout << "Te deseamos mucha suerte." << endl;
+
+En esta tercera revision decidi terminar de dar todo el contexto para que quedara bonito el "menu" y ya continuar
+con el juego
+
+cout << "Bien, antes de comenzar debo explicarte 2 cosas muy importantes. Cuentas con un elemento acumulable." << endl;
+    cout << "La vidaDeLucas representa la salud de nuestro protagonista." << endl;
+    cout << "Al principio, tendrás 3/3 ❤ corazones, pero si baja a 0 perderás inmediatamente." << endl;
+    cout << "Los corazones se pueden ganar o perder dependiendo de la repercusión que tengan tus acciones en la vida de Lucas." << endl;
+
+    cout << "Te daremos un poco más de contexto sobre nuestro protagonista." << endl;
+    cout << "Tienes que lidiar con varias circunstancias que atentan con la vida de nuestro personaje para evitar que muera." << endl;
+    cout << "En esta historia habrá varios finales para nuestro héroe. ¡Encuéntralos todos!" << endl;
+     cout << "--------------------------" << endl;
+
+Esta vez comenzare a colocar el while que permitira que el juego se acabe cuando las vidas de lucas lleguen
+a 0 e impida que suba a mas de 3 
+
+cout << "Despiertas, es un día tranquilo y aburrido como todos los días en tu vida, escuchas que alguien ha entrado en tu casa." << endl;
+
+    while (vidaDeLucas > 0 && vidaDeLucas <= 3) {
+        cout << "\nEstado actual:" << endl;
+        cout << "Vida: " << vidaDeLucas << endl;
+
+        cout << "¿Qué decides hacer? (1. Te escondes debajo de la cama, 2. Te escondes en el baño, 3. Ver TikToks, 4. Bajar a ver qué está pasando, 5. Finalizar juego): ";
+        cin >> decision;
