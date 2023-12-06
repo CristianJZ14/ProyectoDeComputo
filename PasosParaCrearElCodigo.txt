@@ -8,3 +8,12 @@ int main() {
     int decision;
 
 para poder trabajar con el proceso del switch 
+
+
+Para continuar creando el proyecto decidi agregar un poco de contexto sobre el personaje que sera el protagonista
+del juego c:
+
+cout << "Bienvenido a esta pequeña gran aventura donde te pondrás en la piel de un joven llamado *Lucas*." << endl;
+    cout << "En esta historia tomarás varias decisiones que cambiarán la vida de nuestro protagonista." << endl;
+    cout << "Dependiendo de tus respuestas a las problemáticas que enfrenta Lucas, tendrás un buen final o un final malo." << endl;
+    cout << "Te deseamos mucha suerte." << endl;
